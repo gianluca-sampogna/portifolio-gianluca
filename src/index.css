@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; 
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --branco: #fff;
+  --cinza: #58595b;
+  --cinza-claro: #f2f0ee;
+  --preto: #2b2929;
+  --vermelho: #e45447;
+}
