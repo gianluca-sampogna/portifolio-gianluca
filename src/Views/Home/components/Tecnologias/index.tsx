@@ -42,6 +42,7 @@ type stack = {
   icone: IconType;
   cor: string;
   url: string;
+  size?: number;
 };
 
 type projeto = {
@@ -81,6 +82,7 @@ const Tecnologias = () => {
       icone: SiTypescript,
       cor: "#3178C6",
       url: "https://www.typescriptlang.org/",
+      size: 70,
     },
     {
       nome: "React",
@@ -225,10 +227,11 @@ const Tecnologias = () => {
           rel="noopener noreferrer"
           className="icone-item"
           title={tech.nome}
-          style={{ "--cor-original": tech.cor } as React.CSSProperties}>
+          style={{ "--cor-original": tech.cor } as React.CSSProperties}
+        >
           <Icon
             as={tech.icone}
-            size={80}
+            size={tech.size || 80}
             color={theme == "light" ? CORES.CINZA : CORES.BRANCO}
           />
         </a>

@@ -1,17 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    overflow-x: hidden; 
-    font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --fundo: #f2f0ee;
+  --fundo: #fff;
   --branco: #fff;
   --cinza: #58595b;
   --cinza-claro: #f2f0ee;
@@ -19,11 +19,11 @@ body {
   --vermelho: #e45447;
 }
 
-[data-theme='dark'] {
-  --fundo: #0d1017;        
-  --branco: #fff;      
-  --cinza: #fff;       
-  --cinza-claro: #1e1e1e;  
-  --preto: #2b2929;       
-  --vermelho: #e45447;     
+[data-theme="dark"] {
+  --fundo: #0d1017;
+  --branco: #fff;
+  --cinza: #fff;
+  --cinza-claro: #1e1e1e;
+  --preto: #2b2929;
+  --vermelho: #e45447;
 }
