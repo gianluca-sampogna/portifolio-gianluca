@@ -5,3 +5,5 @@ const CORES = Object.freeze({
     PRETO: '#2B2929',
     VERMELHO: '#E45447'
 })
+
+export {CORES}
