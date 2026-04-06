@@ -1,15 +1,31 @@
 import React from "react";
 import { Icon } from "@src/components/Icon";
-import { FaEnvelope, FaSun, FaUser, FaCode, FaBriefcase } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaSun,
+  FaUser,
+  FaCode,
+  FaBriefcase,
+  FaMoon,
+} from "react-icons/fa";
 import "./styles/index.css";
+import { useTheme } from "@src/context/ThemeContext";
 
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div id="container-header">
       <div className="conteudo-esquerda">
         <Icon as={FaEnvelope} size={20} color="var(--cinza)" />
         <p>gianlucascalzisampogna@gmail.com</p>
-        <Icon as={FaSun} size={20} color="var(--cinza)" />
+        <div id="toggle-altera-tema" onClick={toggleTheme}>
+          <Icon
+            as={theme === "light" ? FaSun : FaMoon}
+            size={26}
+            color="var(--cinza)"
+          />
+        </div>
       </div>
 
       <div className="conteudo-direita">

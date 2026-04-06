@@ -1,6 +1,6 @@
 /* Isso vai no topo do seu arquivo de CSS global */
 body {
-    background-color: #f2f0ee; 
+    background-color: var(--fundo); 
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-    background-color: #ffffff; 
+    background-color: var(--fundo); 
     width: 100%;
     max-width: 1300px; 
     min-height: 90vh;

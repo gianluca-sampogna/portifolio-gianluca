@@ -35,6 +35,7 @@ import foto_assin from "@src/assets/app_assin.png";
 import foto_plantech from "@src/assets/plantech.png";
 import foto_appgithub from "@src/assets/app_github.png";
 import portifolio_gianluca from "@src/assets/portifolio_gianluca.png";
+import { useTheme } from "@src/context/ThemeContext";
 
 type stack = {
   nome: string;
@@ -51,6 +52,7 @@ type projeto = {
 };
 
 const Tecnologias = () => {
+  const { theme } = useTheme();
   const handleNavigate = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -224,7 +226,11 @@ const Tecnologias = () => {
           className="icone-item"
           title={tech.nome}
           style={{ "--cor-original": tech.cor } as React.CSSProperties}>
-          <Icon as={tech.icone} size={80} color={CORES.CINZA} />
+          <Icon
+            as={tech.icone}
+            size={80}
+            color={theme == "light" ? CORES.CINZA : CORES.BRANCO}
+          />
         </a>
       ))}
     </div>
