@@ -29,10 +29,10 @@ const Header = () => {
       </div>
 
       <div className="conteudo-direita">
-        <a href="#container-sobre-mim" className="parte">
+        {/* <a href="#container-sobre-mim" className="parte">
           <Icon as={FaUser} size={18} color="var(--cinza)" />
           <span>Sobre mim</span>
-        </a>
+        </a> */}
 
         <a href="#tecnologias" className="parte">
           <Icon as={FaCode} size={18} color="var(--cinza)" />

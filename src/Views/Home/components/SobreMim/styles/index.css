@@ -118,6 +118,11 @@
   align-items: center;
   position: relative;
   z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+
+#container-sobre-mim #quem-sou #fale-comigo #btn-fale-cmg:hover #btn-fale-cmg-interno {
+  animation: liquid-wave 5s ease-in-out infinite;
 }
 
 #container-sobre-mim #quem-sou #fale-comigo #btn-fale-cmg #btn-fale-cmg-interno p {
