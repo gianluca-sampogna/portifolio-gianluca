@@ -232,7 +232,7 @@ const Tecnologias = () => {
 
   return (
     <div className="container">
-      <div>
+      <div id="tecnologias">
         <p className="titulo">Tecnologias</p>
         <div className="sublinhado">
           <Sublinhado />
@@ -261,7 +261,9 @@ const Tecnologias = () => {
       </div>
 
       <div>
-        <p className="titulo">Meus Projetos</p>
+        <p className="titulo" id="meus-projetos-secao">
+          Meus Projetos
+        </p>
         <div className="sublinhado">
           <Sublinhado />
         </div>
