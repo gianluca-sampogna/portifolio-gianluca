@@ -6,13 +6,31 @@
     /* height: 200px; */
 }
 
-#container-sobre-mim #redes-sociais{
+#container-sobre-mim #redes-sociais {
     width: 10%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    /* background-color: blue; */
+    gap: 20px; 
+}
+
+#container-sobre-mim #redes-sociais .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    text-decoration: none;
+}
+
+#container-sobre-mim #redes-sociais .social-link:hover {
+    transform: scale(1.2); 
+}
+
+#container-sobre-mim #redes-sociais .social-link:hover svg {
+    color: var(--cor-original) !important;
+    transition: color 0.3s ease;
 }
 
 #container-sobre-mim #quem-sou{

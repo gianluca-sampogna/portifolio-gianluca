@@ -5,12 +5,34 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"; // Importando os ícones
 import minhaFoto from "@src/assets/foto_gianluca.png";
 
 const SobreMim = () => {
+  const handleNavigate = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <>
       <div id="container-sobre-mim">
         <div id="redes-sociais">
-          <Icon as={FaGithub} size={45} color="var(--cinza)" />
-          <Icon as={FaLinkedin} size={45} color="var(--cinza)" />
+          <a
+            onClick={() =>
+              handleNavigate("https://github.com/gianluca-sampogna")
+            }
+            className="social-link"
+            style={{ "--cor-original": "#181717" } as React.CSSProperties}
+            title="GitHub">
+            <Icon as={FaGithub} size={45} color="var(--cinza)" />
+          </a>
+          <a
+            onClick={() =>
+              handleNavigate(
+                "https://www.linkedin.com/in/gianluca-sampogna-11628a279/",
+              )
+            }
+            className="social-link"
+            style={{ "--cor-original": "#0077B5" } as React.CSSProperties}
+            title="LinkedIn">
+            <Icon as={FaLinkedin} size={45} color="var(--cinza)" />
+          </a>{" "}
         </div>
         <div id="quem-sou">
           <div id="badge">
