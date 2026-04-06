@@ -15,5 +15,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"]
+"include": [
+    "src",
+    "src/**/*.ts",    /* Garante que todos os .ts na src sejam lidos */
+    "src/**/*.tsx",   /* Garante que todos os .tsx na src sejam lidos */
+    "src/**/*.d.ts"   /* Garante que arquivos de definição sejam lidos */
+  ]
 }
