@@ -17,6 +17,13 @@
     align-items: center;
     gap: 15px;
 }
+#container-header .conteudo-esquerda #email :hover {
+    background-color: #cccaca;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
 #container-header .conteudo-esquerda #toggle-altera-tema :hover{
     background-color: var(--cinza-claro);
     cursor: pointer;

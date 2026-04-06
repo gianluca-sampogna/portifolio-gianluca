@@ -13,12 +13,20 @@ import { useTheme } from "@src/context/ThemeContext";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
+  const email = "gianlucascalzisampogna@gmail.com";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email);
+    // alert("E-mail copiado com sucesso!"); // Opcional: feedback para o usuário
+  };
 
   return (
     <div id="container-header">
       <div className="conteudo-esquerda">
         <Icon as={FaEnvelope} size={20} color="var(--cinza)" />
-        <p>gianlucascalzisampogna@gmail.com</p>
+        <div id="email" onClick={handleCopyEmail}>
+          <p>{email}</p>
+        </div>
         <div id="toggle-altera-tema" onClick={toggleTheme}>
           <Icon
             as={theme === "light" ? FaSun : FaMoon}
@@ -29,11 +37,6 @@ const Header = () => {
       </div>
 
       <div className="conteudo-direita">
-        {/* <a href="#container-sobre-mim" className="parte">
-          <Icon as={FaUser} size={18} color="var(--cinza)" />
-          <span>Sobre mim</span>
-        </a> */}
-
         <a href="#tecnologias" className="parte">
           <Icon as={FaCode} size={18} color="var(--cinza)" />
           <span>Tecnologias</span>
