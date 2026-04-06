@@ -1,7 +1,7 @@
 import { Badge } from "@src/components/Badge";
 import "./styles/index.css";
 import { Icon } from "@src/components/Icon";
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // Importando os ícones
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import minhaFoto from "@src/assets/foto_gianluca.png";
 
 const SobreMim = () => {
@@ -52,7 +52,9 @@ const SobreMim = () => {
               construção de páginas web sólidas.
             </p>
           </div>
-          <div id="fale-comigo">
+          <div
+            id="fale-comigo"
+            onClick={() => handleNavigate("https://wa.me/5527997330514")}>
             <div id="btn-fale-cmg">
               <div id="btn-fale-cmg-interno">
                 <p>Fale Comigo</p>
