@@ -1,24 +1,24 @@
 /* Isso vai no topo do seu arquivo de CSS global */
 body {
-    background-color: var(--fundo); 
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-color: var(--fundo);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
 }
 
 #container {
-    background-color: var(--fundo); 
-    width: 100%;
-    max-width: 1300px; 
-    min-height: 90vh;
-    border-radius: 16px; 
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); 
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; 
-    margin-top: 70px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+  background-color: var(--fundo);
+  width: 100%;
+  max-width: 1300px;
+  min-height: 90vh;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }

@@ -1,8 +1,8 @@
-import { Icon } from "@src/components/Icon";
-import "./styles/index.css";
-import { Sublinhado } from "@src/components/Sublinhado";
-import { CORES } from "@src/themes/CORES";
-import { type IconType } from "react-icons";
+import { Icon } from '@src/components/Icon';
+import './styles/index.css';
+import { Sublinhado } from '@src/components/Sublinhado';
+import { CORES } from '@src/themes/CORES';
+import { type IconType } from 'react-icons';
 
 import {
   FaHtml5,
@@ -13,8 +13,8 @@ import {
   FaGithub,
   FaPython,
   FaFontAwesome,
-  FaBolt,
-} from "react-icons/fa";
+  FaBolt
+} from 'react-icons/fa';
 import {
   SiTypescript,
   SiVite,
@@ -26,16 +26,16 @@ import {
   SiPrettier,
   SiGooglemaps,
   SiNpm,
-  SiYarn,
-} from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-import { Projeto } from "./components/Projeto";
+  SiYarn
+} from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
+import { Projeto } from './components/Projeto';
 
-import foto_assin from "@src/assets/app_assin.png";
-import foto_plantech from "@src/assets/plantech.png";
-import foto_appgithub from "@src/assets/app_github.png";
-import portifolio_gianluca from "@src/assets/portifolio_gianluca.png";
-import { useTheme } from "@src/context/ThemeContext";
+import foto_assin from '@src/assets/app_assin.png';
+import foto_plantech from '@src/assets/plantech.png';
+import foto_appgithub from '@src/assets/app_github.png';
+import portifolio_gianluca from '@src/assets/portifolio_gianluca.png';
+import { useTheme } from '@src/context/ThemeContext';
 
 type stack = {
   nome: string;
@@ -55,166 +55,166 @@ type projeto = {
 const Tecnologias = () => {
   const { theme } = useTheme();
   const handleNavigate = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   const frontEndStack = [
     {
-      nome: "HTML5",
+      nome: 'HTML5',
       icone: FaHtml5,
-      cor: "#E34F26",
-      url: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
+      cor: '#E34F26',
+      url: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML'
     },
     {
-      nome: "CSS3",
+      nome: 'CSS3',
       icone: FaCss3Alt,
-      cor: "#1572B6",
-      url: "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+      cor: '#1572B6',
+      url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS'
     },
     {
-      nome: "JavaScript",
+      nome: 'JavaScript',
       icone: FaJsSquare,
-      cor: "#F7DF1E",
-      url: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+      cor: '#F7DF1E',
+      url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'
     },
     {
-      nome: "TypeScript",
+      nome: 'TypeScript',
       icone: SiTypescript,
-      cor: "#3178C6",
-      url: "https://www.typescriptlang.org/",
-      size: 70,
+      cor: '#3178C6',
+      url: 'https://www.typescriptlang.org/',
+      size: 70
     },
     {
-      nome: "React",
+      nome: 'React',
       icone: FaReact,
-      cor: "#61DAFB",
-      url: "https://react.dev/",
+      cor: '#61DAFB',
+      url: 'https://react.dev/'
     },
-    { nome: "Vite", icone: SiVite, cor: "#646CFF", url: "https://vitejs.dev/" },
+    { nome: 'Vite', icone: SiVite, cor: '#646CFF', url: 'https://vitejs.dev/' },
     {
-      nome: "Axios",
+      nome: 'Axios',
       icone: SiAxios,
-      cor: "#5A29E4",
-      url: "https://axios-http.com/",
-    },
+      cor: '#5A29E4',
+      url: 'https://axios-http.com/'
+    }
   ];
 
   const mobileStack = [
     {
-      nome: "React Native",
+      nome: 'React Native',
       icone: TbBrandReactNative,
-      cor: "#61DAFB",
-      url: "https://reactnative.dev/",
+      cor: '#61DAFB',
+      url: 'https://reactnative.dev/'
     },
     {
-      nome: "Expo",
+      nome: 'Expo',
       icone: SiExpo,
-      cor: "#000020",
-      url: "https://docs.expo.dev/",
+      cor: '#000020',
+      url: 'https://docs.expo.dev/'
     },
     {
-      nome: "Fastlane",
+      nome: 'Fastlane',
       icone: SiFastlane,
-      cor: "#00F200",
-      url: "https://docs.fastlane.tools/",
+      cor: '#00F200',
+      url: 'https://docs.fastlane.tools/'
     },
     {
-      nome: "FontAwesome",
+      nome: 'FontAwesome',
       icone: FaFontAwesome,
-      cor: "#339AF0",
-      url: "https://fontawesome.com/docs",
+      cor: '#339AF0',
+      url: 'https://fontawesome.com/docs'
     },
     {
-      nome: "Reanimated",
+      nome: 'Reanimated',
       icone: FaBolt,
-      cor: "#9933FF",
-      url: "https://docs.swmansion.com/react-native-reanimated/",
+      cor: '#9933FF',
+      url: 'https://docs.swmansion.com/react-native-reanimated/'
     },
     {
-      nome: "Maps",
+      nome: 'Maps',
       icone: SiGooglemaps,
-      cor: "#4285F4",
-      url: "https://github.com/react-native-maps/react-native-maps",
-    },
+      cor: '#4285F4',
+      url: 'https://github.com/react-native-maps/react-native-maps'
+    }
   ];
 
   const outrosStack = [
     {
-      nome: "Git",
+      nome: 'Git',
       icone: FaGitAlt,
-      cor: "#F05032",
-      url: "https://git-scm.com/",
+      cor: '#F05032',
+      url: 'https://git-scm.com/'
     },
     {
-      nome: "GitHub",
+      nome: 'GitHub',
       icone: FaGithub,
-      cor: "#181717",
-      url: "https://github.com/",
+      cor: '#181717',
+      url: 'https://github.com/'
     },
     {
-      nome: "Python",
+      nome: 'Python',
       icone: FaPython,
-      cor: "#3776AB",
-      url: "https://www.python.org/",
+      cor: '#3776AB',
+      url: 'https://www.python.org/'
     },
     {
-      nome: "Google Play",
+      nome: 'Google Play',
       icone: SiGoogleplay,
-      cor: "#410093",
-      url: "https://play.google.com/console/about/",
+      cor: '#410093',
+      url: 'https://play.google.com/console/about/'
     },
     {
-      nome: "Apple Store",
+      nome: 'Apple Store',
       icone: SiAppstore,
-      cor: "#0071E3",
-      url: "https://developer.apple.com/app-store/",
+      cor: '#0071E3',
+      url: 'https://developer.apple.com/app-store/'
     },
     {
-      nome: "Prettier",
+      nome: 'Prettier',
       icone: SiPrettier,
-      cor: "#F7B93E",
-      url: "https://prettier.io/",
+      cor: '#F7B93E',
+      url: 'https://prettier.io/'
     },
     {
-      nome: "npm",
+      nome: 'npm',
       icone: SiNpm,
-      cor: "#CB3837",
-      url: "https://www.npmjs.com/",
+      cor: '#CB3837',
+      url: 'https://www.npmjs.com/'
     },
     {
-      nome: "Yarn",
+      nome: 'Yarn',
       icone: SiYarn,
-      cor: "#2C8EBB",
-      url: "https://yarnpkg.com/",
-    },
+      cor: '#2C8EBB',
+      url: 'https://yarnpkg.com/'
+    }
   ];
 
   const meusProjetos = [
     {
-      titulo: "App Assin",
-      descricao: "Aplicativo para os servidores do incaper",
-      url: "https://play.google.com/store/apps/details?id=com.appassin&hl=pt_BR",
-      uri_image: foto_assin,
+      titulo: 'App Assin',
+      descricao: 'Aplicativo para os servidores do incaper',
+      url: 'https://play.google.com/store/apps/details?id=com.appassin&hl=pt_BR',
+      uri_image: foto_assin
     },
     {
-      titulo: "Plantech",
-      descricao: "Aplicativo para o controle da fertiirrigação de hortas",
-      url: "https://github.com/PlantechPI/planTech-mobile",
-      uri_image: foto_plantech,
+      titulo: 'Plantech',
+      descricao: 'Aplicativo para o controle da fertiirrigação de hortas',
+      url: 'https://github.com/PlantechPI/planTech-mobile',
+      uri_image: foto_plantech
     },
     {
-      titulo: "App github",
+      titulo: 'App github',
       descricao:
-        "Aplicativo que cria uma rede social com base na api do github",
-      url: "https://github.com/gianluca-sampogna/AppGitHub",
-      uri_image: foto_appgithub,
+        'Aplicativo que cria uma rede social com base na api do github',
+      url: 'https://github.com/gianluca-sampogna/AppGitHub',
+      uri_image: foto_appgithub
     },
     {
-      titulo: "Portifolio",
-      descricao: "Meu portifolio",
-      url: "https://github.com/gianluca-sampogna/portifolio-gianluca",
-      uri_image: portifolio_gianluca,
-    },
+      titulo: 'Portifolio',
+      descricao: 'Meu portifolio',
+      url: 'https://github.com/gianluca-sampogna/portifolio-gianluca',
+      uri_image: portifolio_gianluca
+    }
   ];
 
   const renderStack = (stack: stack[]) => (
@@ -227,12 +227,12 @@ const Tecnologias = () => {
           rel="noopener noreferrer"
           className="icone-item"
           title={tech.nome}
-          style={{ "--cor-original": tech.cor } as React.CSSProperties}
+          style={{ '--cor-original': tech.cor } as React.CSSProperties}
         >
           <Icon
             as={tech.icone}
             size={tech.size || 80}
-            color={theme == "light" ? CORES.CINZA : CORES.BRANCO}
+            color={theme == 'light' ? CORES.CINZA : CORES.BRANCO}
           />
         </a>
       ))}

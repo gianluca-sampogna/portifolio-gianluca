@@ -1,12 +1,12 @@
-import { Badge } from "@src/components/Badge";
-import "./styles/index.css";
-import { Icon } from "@src/components/Icon";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import minhaFoto from "@src/assets/foto_gianluca.png";
+import { Badge } from '@src/components/Badge';
+import './styles/index.css';
+import { Icon } from '@src/components/Icon';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import minhaFoto from '@src/assets/foto_gianluca.png';
 
 const SobreMim = () => {
   const handleNavigate = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -15,24 +15,26 @@ const SobreMim = () => {
         <div id="redes-sociais">
           <a
             onClick={() =>
-              handleNavigate("https://github.com/gianluca-sampogna")
+              handleNavigate('https://github.com/gianluca-sampogna')
             }
             className="social-link"
-            style={{ "--cor-original": "#181717" } as React.CSSProperties}
-            title="GitHub">
+            style={{ '--cor-original': '#181717' } as React.CSSProperties}
+            title="GitHub"
+          >
             <Icon as={FaGithub} size={45} color="var(--cinza)" />
           </a>
           <a
             onClick={() =>
               handleNavigate(
-                "https://www.linkedin.com/in/gianluca-sampogna-11628a279/",
+                'https://www.linkedin.com/in/gianluca-sampogna-11628a279/'
               )
             }
             className="social-link"
-            style={{ "--cor-original": "#0077B5" } as React.CSSProperties}
-            title="LinkedIn">
+            style={{ '--cor-original': '#0077B5' } as React.CSSProperties}
+            title="LinkedIn"
+          >
             <Icon as={FaLinkedin} size={45} color="var(--cinza)" />
-          </a>{" "}
+          </a>{' '}
         </div>
         <div id="quem-sou">
           <div id="badge">
@@ -45,6 +47,13 @@ const SobreMim = () => {
             <p className="txt-stack">Desenvolvedor mobile</p>
             <p className="txt-stack">Desenvolvedor front-end</p>
           </div>
+          <div className="imagem-mobile">
+            <img
+              src={minhaFoto}
+              alt="Foto de Gianluca Scalzi Sampogna"
+              className="foto-perfil"
+            />
+          </div>
           <div id="falando-sobre-mim">
             <p id="txt-falando-sobre-mim">
               Desenvolvedor de software do Espirito Santo, Brasil, com
@@ -54,7 +63,8 @@ const SobreMim = () => {
           </div>
           <div
             id="fale-comigo"
-            onClick={() => handleNavigate("https://wa.me/5527997330514")}>
+            onClick={() => handleNavigate('https://wa.me/5527997330514')}
+          >
             <div id="btn-fale-cmg">
               <div id="btn-fale-cmg-interno">
                 <p>Fale Comigo</p>

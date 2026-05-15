@@ -1,66 +1,75 @@
 #container-header {
-    height: 80px;
-    width: 100%;
-    background-color: var(--fundo);
-    padding: 0 8%;
-    
-    display: flex;       
-    align-items: center;    
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  height: 80px;
+  width: 100%;
+  background-color: var(--fundo);
+  padding: 0 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 992px) {
+  #container-header {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 #container-header .conteudo-esquerda {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 #container-header .conteudo-esquerda #email :hover {
-    background-color: #cccaca;
-    margin: 1px;
-    cursor: pointer;
-    border-radius: 20%;
+  background-color: #cccaca;
+  margin: 1px;
+  cursor: pointer;
+  border-radius: 20%;
 }
 
-#container-header .conteudo-esquerda #toggle-altera-tema :hover{
-    background-color: var(--cinza-claro);
-    cursor: pointer;
-    border-radius: 100%;
+#container-header .conteudo-esquerda #toggle-altera-tema :hover {
+  background-color: var(--cinza-claro);
+  cursor: pointer;
+  border-radius: 100%;
 }
 
 #container-header .conteudo-direita {
-    display: flex;
-    align-items: center;
-    gap: 30px; 
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 #container-header .conteudo-direita .parte {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 #container-header .conteudo-direita .parte span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--cinza);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cinza);
 }
 
 #container-header .conteudo-direita .parte:hover {
-    transform: translateY(-2px);
-    opacity: 0.7;
+  transform: translateY(-2px);
+  opacity: 0.7;
 }
 
 #container-header p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 700;       
-    color: var(--cinza);     
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--cinza);
+  margin: 0;
 }
