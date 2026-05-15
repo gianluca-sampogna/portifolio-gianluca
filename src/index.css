@@ -7,10 +7,11 @@
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
+  color-scheme: light;
   --fundo: #fff;
   --branco: #fff;
   --cinza: #58595b;
@@ -19,7 +20,8 @@ body {
   --vermelho: #e45447;
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
+  color-scheme: dark;
   --fundo: #0d1017;
   --branco: #fff;
   --cinza: #fff;

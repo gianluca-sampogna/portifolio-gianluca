@@ -22,3 +22,10 @@ body {
   margin-bottom: 50px;
   padding-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  #container {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
