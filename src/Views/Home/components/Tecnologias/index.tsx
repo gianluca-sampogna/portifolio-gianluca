@@ -1,7 +1,7 @@
 import { Icon } from '@src/components/Icon';
 import './styles/index.css';
 import { Sublinhado } from '@src/components/Sublinhado';
-import { CORES } from '@src/themes/CORES';
+import { CORES } from '@src/themes/colors';
 
 import { type IconType } from 'react-icons';
 
